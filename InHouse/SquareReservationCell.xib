@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Colfax-Medium.otf">
+            <string>Colfax-Medium</string>
+        </array>
+        <array key="Colfax-Regular.otf">
+            <string>Colfax-Regular</string>
+        </array>
+        <array key="FreightDispProMedium-Regular.otf">
+            <string>FreightDispProMedium-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SquareReservationCellIdentifier" id="tYl-XY-E8f" customClass="ReservationCell" customModule="InHouse" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="338" height="341"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="338" height="341"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="squarePending" translatesAutoresizingMaskIntoConstraints="NO" id="rPP-x7-a3h" userLabel="Image">
+                        <rect key="frame" x="36" y="36" width="266" height="269"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v8R-fn-UfU">
+                        <rect key="frame" x="36" y="36" width="266" height="269"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mpn-qf-llo" userLabel="Top View">
+                                <rect key="frame" x="0.0" y="0.0" width="266" height="269"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FKy-oC-b0e">
+                                        <rect key="frame" x="117.5" y="20" width="31" height="14"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="Colfax-Regular" family="Colfax" pointSize="14"/>
+                                        <color key="textColor" red="0.96862745100000003" green="0.97794288399999996" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sxw-g5-bmp" userLabel="Spacer">
+                                        <rect key="frame" x="96" y="46" width="75" height="1"/>
+                                        <color key="backgroundColor" red="0.96862745100000003" green="0.97794288399999996" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="75" id="3eE-5R-MSW"/>
+                                            <constraint firstAttribute="height" constant="1" id="w8E-eN-R56"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurant" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MeF-S0-Fv2">
+                                        <rect key="frame" x="69.5" y="55" width="128.5" height="38"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="FreightDispProMedium-Regular" family="FreightDispProMedium-Regular" pointSize="30"/>
+                                        <color key="textColor" red="0.96862745100000003" green="0.97794288399999996" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Party" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tmW-Bn-eum">
+                                        <rect key="frame" x="85.5" y="139" width="32" height="16"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="16" id="a8q-8d-GwU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Colfax-Regular" family="Colfax" pointSize="13"/>
+                                        <color key="textColor" red="0.96862745100000003" green="0.97794288399999996" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gje-GD-ve3">
+                                        <rect key="frame" x="166" y="139" width="30" height="16"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="16" id="qtK-Q7-XaD"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Colfax-Regular" family="Colfax" pointSize="13"/>
+                                        <color key="textColor" red="0.96862745100000003" green="0.97794288399999996" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2U-tV-DD5">
+                                        <rect key="frame" x="20" y="101" width="226" height="14"/>
+                                        <fontDescription key="fontDescription" name="Colfax-Regular" family="Colfax" pointSize="14"/>
+                                        <color key="textColor" red="0.96862745100000003" green="0.97794288399999996" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="userIcon" translatesAutoresizingMaskIntoConstraints="NO" id="lnk-gM-fd5">
+                                        <rect key="frame" x="59.5" y="139" width="18" height="17"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clockIcon" translatesAutoresizingMaskIntoConstraints="NO" id="HVI-e6-Z94">
+                                        <rect key="frame" x="140" y="138" width="18" height="18"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uj8-6T-ZfI" customClass="LoadingButton" customModule="InHouse" customModuleProvider="target">
+                                        <rect key="frame" x="26" y="213" width="214" height="40"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="jB6-DY-3LF"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Colfax-Medium" family="Colfax" pointSize="16"/>
+                                        <state key="normal" title="Title">
+                                            <color key="titleColor" red="0.26051515339999998" green="0.3244303167" blue="0.3910349011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tapActionButton:" destination="tYl-XY-E8f" eventType="touchUpInside" id="g0p-NR-4n8"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="uj8-6T-ZfI" secondAttribute="trailing" constant="26" id="27s-ZG-ajG"/>
+                                    <constraint firstItem="uj8-6T-ZfI" firstAttribute="leading" secondItem="Mpn-qf-llo" secondAttribute="leading" constant="26" id="982-j9-dtg"/>
+                                    <constraint firstItem="tmW-Bn-eum" firstAttribute="centerX" secondItem="Mpn-qf-llo" secondAttribute="centerX" constant="-32" id="A36-vy-SIO"/>
+                                    <constraint firstItem="lnk-gM-fd5" firstAttribute="centerY" secondItem="tmW-Bn-eum" secondAttribute="centerY" id="Cd5-Du-sMS"/>
+                                    <constraint firstItem="HVI-e6-Z94" firstAttribute="centerX" secondItem="Mpn-qf-llo" secondAttribute="centerX" constant="16" id="Jux-BU-zTO"/>
+                                    <constraint firstItem="Gje-GD-ve3" firstAttribute="leading" secondItem="HVI-e6-Z94" secondAttribute="trailing" constant="8" id="KgP-Et-f9f"/>
+                                    <constraint firstAttribute="trailing" secondItem="b2U-tV-DD5" secondAttribute="trailing" constant="20" id="Kzj-xZ-eR5"/>
+                                    <constraint firstItem="HVI-e6-Z94" firstAttribute="centerY" secondItem="Gje-GD-ve3" secondAttribute="centerY" id="N8Y-H7-8b9"/>
+                                    <constraint firstItem="FKy-oC-b0e" firstAttribute="centerX" secondItem="Mpn-qf-llo" secondAttribute="centerX" id="NH2-k7-5P2"/>
+                                    <constraint firstItem="Gje-GD-ve3" firstAttribute="top" secondItem="tmW-Bn-eum" secondAttribute="top" id="PzK-ba-aaP"/>
+                                    <constraint firstItem="FKy-oC-b0e" firstAttribute="top" secondItem="Mpn-qf-llo" secondAttribute="top" constant="20" id="SuB-00-gN8"/>
+                                    <constraint firstItem="Sxw-g5-bmp" firstAttribute="top" secondItem="FKy-oC-b0e" secondAttribute="bottom" constant="12" id="V5x-Av-STC"/>
+                                    <constraint firstItem="tmW-Bn-eum" firstAttribute="leading" secondItem="lnk-gM-fd5" secondAttribute="trailing" constant="8" id="ZYG-MQ-dFX"/>
+                                    <constraint firstItem="b2U-tV-DD5" firstAttribute="centerX" secondItem="Mpn-qf-llo" secondAttribute="centerX" id="e3n-Tf-9ou"/>
+                                    <constraint firstItem="tmW-Bn-eum" firstAttribute="top" secondItem="b2U-tV-DD5" secondAttribute="bottom" constant="24" id="eTR-6V-Kbj"/>
+                                    <constraint firstItem="Sxw-g5-bmp" firstAttribute="centerX" secondItem="Mpn-qf-llo" secondAttribute="centerX" id="oKn-U1-fGS"/>
+                                    <constraint firstItem="MeF-S0-Fv2" firstAttribute="top" secondItem="Sxw-g5-bmp" secondAttribute="bottom" constant="8" id="oiv-p1-3OD"/>
+                                    <constraint firstItem="b2U-tV-DD5" firstAttribute="leading" secondItem="Mpn-qf-llo" secondAttribute="leading" constant="20" id="tIv-WC-LYp"/>
+                                    <constraint firstItem="HVI-e6-Z94" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="tmW-Bn-eum" secondAttribute="trailing" constant="8" id="vK9-gW-E1w"/>
+                                    <constraint firstItem="MeF-S0-Fv2" firstAttribute="centerX" secondItem="Mpn-qf-llo" secondAttribute="centerX" id="wlj-H0-TDF"/>
+                                    <constraint firstAttribute="bottom" secondItem="uj8-6T-ZfI" secondAttribute="bottom" constant="16" id="wtA-mp-D2g"/>
+                                    <constraint firstItem="b2U-tV-DD5" firstAttribute="top" secondItem="MeF-S0-Fv2" secondAttribute="bottom" constant="8" id="zFD-wp-aUX"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Mpn-qf-llo" firstAttribute="leading" secondItem="v8R-fn-UfU" secondAttribute="leading" id="47H-AL-HIZ"/>
+                            <constraint firstAttribute="trailing" secondItem="Mpn-qf-llo" secondAttribute="trailing" id="G4q-yn-tQY"/>
+                            <constraint firstItem="Mpn-qf-llo" firstAttribute="top" secondItem="v8R-fn-UfU" secondAttribute="top" id="JCz-1H-7cT"/>
+                            <constraint firstAttribute="bottom" secondItem="Mpn-qf-llo" secondAttribute="bottom" id="Q5W-0Z-uuI"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.96460121870000004" green="0.96476620440000005" blue="0.96459084750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="v8R-fn-UfU" firstAttribute="leading" secondItem="tYl-XY-E8f" secondAttribute="leading" constant="36" id="EsO-78-iuG"/>
+                <constraint firstAttribute="trailing" secondItem="v8R-fn-UfU" secondAttribute="trailing" constant="36" id="SHD-pJ-vzW"/>
+                <constraint firstAttribute="bottom" secondItem="rPP-x7-a3h" secondAttribute="bottom" constant="36" id="TeN-Ba-wxm"/>
+                <constraint firstItem="v8R-fn-UfU" firstAttribute="top" secondItem="tYl-XY-E8f" secondAttribute="top" constant="36" id="Vw7-wV-3W3"/>
+                <constraint firstAttribute="bottom" secondItem="v8R-fn-UfU" secondAttribute="bottom" constant="36" id="i2O-2N-CxG"/>
+                <constraint firstItem="rPP-x7-a3h" firstAttribute="leading" secondItem="tYl-XY-E8f" secondAttribute="leading" constant="36" id="iHS-Tm-bUm"/>
+                <constraint firstAttribute="trailing" secondItem="rPP-x7-a3h" secondAttribute="trailing" constant="36" id="nDs-hs-hUU"/>
+                <constraint firstItem="rPP-x7-a3h" firstAttribute="top" secondItem="tYl-XY-E8f" secondAttribute="top" constant="36" id="xsN-GJ-oem"/>
+            </constraints>
+            <size key="customSize" width="338" height="341"/>
+            <connections>
+                <outlet property="addressLabel" destination="b2U-tV-DD5" id="eRd-Ei-ZGk"/>
+                <outlet property="backgroundImageView" destination="rPP-x7-a3h" id="yho-C8-dfW"/>
+                <outlet property="dateLabel" destination="FKy-oC-b0e" id="L6N-bs-0Ew"/>
+                <outlet property="partyLabel" destination="tmW-Bn-eum" id="CeL-jK-OsH"/>
+                <outlet property="reservationButton" destination="uj8-6T-ZfI" id="26y-bO-t4V"/>
+                <outlet property="restaurantLabel" destination="MeF-S0-Fv2" id="9qK-pb-gYJ"/>
+                <outlet property="timeLabel" destination="Gje-GD-ve3" id="257-gL-QGf"/>
+            </connections>
+            <point key="canvasLocation" x="20" y="123.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="clockIcon" width="18" height="18"/>
+        <image name="squarePending" width="430" height="445"/>
+        <image name="userIcon" width="18" height="17"/>
+    </resources>
+</document>

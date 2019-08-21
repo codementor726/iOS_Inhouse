@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="YTr-V6-Sax">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Colfax-Bold.otf">
+            <string>Colfax-Bold</string>
+        </array>
+        <array key="Colfax-Medium.otf">
+            <string>Colfax-Medium</string>
+        </array>
+        <array key="Colfax-Regular.otf">
+            <string>Colfax-Regular</string>
+        </array>
+        <array key="FreightDispProMedium-Regular.otf">
+            <string>FreightDispProMedium-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Grant Location View Controller-->
+        <scene sceneID="pNT-y3-tfA">
+            <objects>
+                <viewController storyboardIdentifier="GrantLocationViewControllerIdentifier" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YTr-V6-Sax" customClass="GrantLocationViewController" customModule="InHouse" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ews-ah-Wem"/>
+                        <viewControllerLayoutGuide type="bottom" id="eMR-4U-z5L"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dY3-Mf-3jF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INHOUSE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Az5-H3-zmW">
+                                <rect key="frame" x="102" y="161" width="172" height="50.5"/>
+                                <color key="backgroundColor" red="0.26051515339999998" green="0.3244303167" blue="0.3910349011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="FreightDispProMedium-Regular" family="FreightDispProMedium-Regular" pointSize="40"/>
+                                <color key="textColor" red="0.96862745100000003" green="0.97794288399999996" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Keep Us Updated!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Zi-rM-vOs">
+                                <rect key="frame" x="82" y="266.5" width="211" height="38"/>
+                                <color key="backgroundColor" red="0.26051515339999998" green="0.3244303167" blue="0.3910349011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="FreightDispProMedium-Regular" family="FreightDispProMedium-Regular" pointSize="30"/>
+                                <color key="textColor" red="0.96862745100000003" green="0.97794288399999996" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Allow INHOUSE to access your current location to recommend restaurants near you!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EtP-GK-pdE">
+                                <rect key="frame" x="20" y="316.5" width="335" height="32"/>
+                                <color key="backgroundColor" red="0.26274509800000001" green="0.32549019610000002" blue="0.38823529410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Colfax-Regular" family="Colfax" pointSize="16"/>
+                                <color key="textColor" red="0.96862745100000003" green="0.97794288399999996" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="keH-z1-r1x">
+                                <rect key="frame" x="56" y="409.5" width="263" height="48"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="Yaf-cK-Uhm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Colfax-Medium" family="Colfax" pointSize="16"/>
+                                <state key="normal" title="Grant Access">
+                                    <color key="titleColor" red="0.26051515339999998" green="0.3244303167" blue="0.3910349011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapGrantAccess:" destination="YTr-V6-Sax" eventType="touchUpInside" id="qjM-pj-HoZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tlO-q0-Vsf">
+                                <rect key="frame" x="104" y="480.5" width="167" height="26"/>
+                                <color key="backgroundColor" red="0.26051515339999998" green="0.3244303167" blue="0.3910349011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Colfax-Bold" family="Colfax" pointSize="14"/>
+                                <state key="normal" title="No thanks, another time!">
+                                    <color key="titleColor" red="0.96862745100000003" green="0.97794288399999996" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapDecline:" destination="YTr-V6-Sax" eventType="touchUpInside" id="y4F-I1-dYI"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PUk-w2-dBt" userLabel="Underline">
+                                <rect key="frame" x="104" y="500.5" width="167" height="1"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="8ds-Yh-D7A"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IMM-va-wAg">
+                                <rect key="frame" x="331" y="20" width="44" height="44"/>
+                                <color key="backgroundColor" red="0.26051515339999998" green="0.3244303167" blue="0.3910349011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="EBo-er-fsD"/>
+                                    <constraint firstAttribute="height" constant="44" id="TnV-A7-mon"/>
+                                </constraints>
+                                <state key="normal" image="cancelXIcon">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapDecline:" destination="YTr-V6-Sax" eventType="touchUpInside" id="yuB-DN-7he"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.26051515339999998" green="0.3244303167" blue="0.3910349011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="EtP-GK-pdE" secondAttribute="trailing" constant="20" id="4fx-vb-38v"/>
+                            <constraint firstItem="IMM-va-wAg" firstAttribute="top" secondItem="ews-ah-Wem" secondAttribute="bottom" id="MV6-IN-EBS"/>
+                            <constraint firstItem="Az5-H3-zmW" firstAttribute="centerX" secondItem="dY3-Mf-3jF" secondAttribute="centerX" id="NoD-oQ-7mO"/>
+                            <constraint firstItem="tlO-q0-Vsf" firstAttribute="top" secondItem="keH-z1-r1x" secondAttribute="bottom" constant="23" id="RFY-Zc-z7A"/>
+                            <constraint firstItem="tlO-q0-Vsf" firstAttribute="centerX" secondItem="dY3-Mf-3jF" secondAttribute="centerX" id="Rxy-ND-lsi"/>
+                            <constraint firstItem="PUk-w2-dBt" firstAttribute="top" secondItem="tlO-q0-Vsf" secondAttribute="bottom" constant="-6" id="XW5-Sa-UJn"/>
+                            <constraint firstItem="PUk-w2-dBt" firstAttribute="leading" secondItem="tlO-q0-Vsf" secondAttribute="leading" id="ZRZ-i5-0i6"/>
+                            <constraint firstAttribute="trailing" secondItem="IMM-va-wAg" secondAttribute="trailing" id="aEY-fq-Tqj"/>
+                            <constraint firstItem="keH-z1-r1x" firstAttribute="centerY" secondItem="dY3-Mf-3jF" secondAttribute="centerY" constant="100" id="cSz-jv-J7r"/>
+                            <constraint firstItem="PUk-w2-dBt" firstAttribute="trailing" secondItem="tlO-q0-Vsf" secondAttribute="trailing" id="cVp-by-1mw"/>
+                            <constraint firstItem="3Zi-rM-vOs" firstAttribute="top" secondItem="Az5-H3-zmW" secondAttribute="bottom" constant="55" id="fpp-Vc-LXt"/>
+                            <constraint firstAttribute="trailing" secondItem="keH-z1-r1x" secondAttribute="trailing" constant="56" id="iUn-bq-9WR"/>
+                            <constraint firstItem="keH-z1-r1x" firstAttribute="top" secondItem="EtP-GK-pdE" secondAttribute="bottom" constant="61" id="jKV-nu-hhU"/>
+                            <constraint firstItem="3Zi-rM-vOs" firstAttribute="centerX" secondItem="dY3-Mf-3jF" secondAttribute="centerX" id="lt2-dC-wpg"/>
+                            <constraint firstItem="EtP-GK-pdE" firstAttribute="leading" secondItem="dY3-Mf-3jF" secondAttribute="leading" constant="20" id="oJk-Fj-CKW"/>
+                            <constraint firstItem="keH-z1-r1x" firstAttribute="leading" secondItem="dY3-Mf-3jF" secondAttribute="leading" constant="56" id="ueI-6v-i9D"/>
+                            <constraint firstItem="EtP-GK-pdE" firstAttribute="top" secondItem="3Zi-rM-vOs" secondAttribute="bottom" constant="12" id="zZc-Hy-Uiy"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7TW-1T-Mkp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-159.19999999999999" y="179.46026986506749"/>
+        </scene>
+        <!--Grant Calendar View Controller-->
+        <scene sceneID="p1h-IC-Lz9">
+            <objects>
+                <viewController storyboardIdentifier="GrantCalendarViewControllerIdentifier" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6MO-hj-mlE" customClass="GrantCalendarViewController" customModule="InHouse" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DcB-H0-lEH"/>
+                        <viewControllerLayoutGuide type="bottom" id="JBo-sG-G74"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TSr-ue-S5g">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mark Your Calendar!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2G4-ws-W3B">
+                                <rect key="frame" x="65" y="250.5" width="246" height="38"/>
+                                <color key="backgroundColor" red="0.26051515339999998" green="0.3244303167" blue="0.3910349011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="FreightDispProMedium-Regular" family="FreightDispProMedium-Regular" pointSize="30"/>
+                                <color key="textColor" red="0.96862745100000003" green="0.97794288399999996" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Allow INHOUSE to access your calendar so you can get notified about your upcoming reservations!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="csG-D4-3a3">
+                                <rect key="frame" x="20" y="300.5" width="335" height="48"/>
+                                <color key="backgroundColor" red="0.26274509800000001" green="0.32549019610000002" blue="0.38823529410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Colfax-Regular" family="Colfax" pointSize="16"/>
+                                <color key="textColor" red="0.96862745100000003" green="0.97794288399999996" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ypD-qu-XOJ">
+                                <rect key="frame" x="56" y="409.5" width="263" height="48"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="dEF-DL-WnH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Colfax-Medium" family="Colfax" pointSize="16"/>
+                                <state key="normal" title="Grant Access">
+                                    <color key="titleColor" red="0.26051515339999998" green="0.3244303167" blue="0.3910349011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapGrantAccess:" destination="6MO-hj-mlE" eventType="touchUpInside" id="7dB-JH-rwm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tj4-Cw-Uab">
+                                <rect key="frame" x="104" y="480.5" width="167" height="26"/>
+                                <color key="backgroundColor" red="0.26051515339999998" green="0.3244303167" blue="0.3910349011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Colfax-Bold" family="Colfax" pointSize="14"/>
+                                <state key="normal" title="No thanks, another time!">
+                                    <color key="titleColor" red="0.96862745100000003" green="0.97794288399999996" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapDecline:" destination="6MO-hj-mlE" eventType="touchUpInside" id="cx8-6Y-w3z"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oj0-Tx-Ml9" userLabel="Underline">
+                                <rect key="frame" x="104" y="500.5" width="167" height="1"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="8eB-Og-LN0"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DTK-yw-UMy">
+                                <rect key="frame" x="331" y="20" width="44" height="44"/>
+                                <color key="backgroundColor" red="0.26051515339999998" green="0.3244303167" blue="0.3910349011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="7hb-DC-kkf"/>
+                                    <constraint firstAttribute="width" constant="44" id="CaD-j2-DdH"/>
+                                </constraints>
+                                <state key="normal" image="cancelXIcon">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapDecline:" destination="6MO-hj-mlE" eventType="touchUpInside" id="YFT-j5-pDf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.26051515339999998" green="0.3244303167" blue="0.3910349011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2G4-ws-W3B" firstAttribute="centerX" secondItem="TSr-ue-S5g" secondAttribute="centerX" id="02Z-A8-7IG"/>
+                            <constraint firstAttribute="trailing" secondItem="ypD-qu-XOJ" secondAttribute="trailing" constant="56" id="1d5-m6-ucK"/>
+                            <constraint firstItem="DTK-yw-UMy" firstAttribute="top" secondItem="DcB-H0-lEH" secondAttribute="bottom" id="28V-XF-pAK"/>
+                            <constraint firstItem="Oj0-Tx-Ml9" firstAttribute="leading" secondItem="Tj4-Cw-Uab" secondAttribute="leading" id="2VP-hz-5QK"/>
+                            <constraint firstItem="Tj4-Cw-Uab" firstAttribute="centerX" secondItem="TSr-ue-S5g" secondAttribute="centerX" id="FSg-fg-ilT"/>
+                            <constraint firstItem="csG-D4-3a3" firstAttribute="top" secondItem="2G4-ws-W3B" secondAttribute="bottom" constant="12" id="GBM-cH-FhZ"/>
+                            <constraint firstItem="csG-D4-3a3" firstAttribute="leading" secondItem="TSr-ue-S5g" secondAttribute="leading" constant="20" id="MhT-vk-on7"/>
+                            <constraint firstAttribute="trailing" secondItem="DTK-yw-UMy" secondAttribute="trailing" id="Tbl-9g-7P2"/>
+                            <constraint firstItem="ypD-qu-XOJ" firstAttribute="centerY" secondItem="TSr-ue-S5g" secondAttribute="centerY" constant="100" id="UP2-KV-s4c"/>
+                            <constraint firstItem="Oj0-Tx-Ml9" firstAttribute="trailing" secondItem="Tj4-Cw-Uab" secondAttribute="trailing" id="emh-ts-EIV"/>
+                            <constraint firstAttribute="trailing" secondItem="csG-D4-3a3" secondAttribute="trailing" constant="20" id="hzQ-1H-z53"/>
+                            <constraint firstItem="Oj0-Tx-Ml9" firstAttribute="top" secondItem="Tj4-Cw-Uab" secondAttribute="bottom" constant="-6" id="lCR-Yi-dc7"/>
+                            <constraint firstItem="ypD-qu-XOJ" firstAttribute="leading" secondItem="TSr-ue-S5g" secondAttribute="leading" constant="56" id="tEg-fo-Qbs"/>
+                            <constraint firstItem="ypD-qu-XOJ" firstAttribute="top" secondItem="csG-D4-3a3" secondAttribute="bottom" constant="61" id="uiw-Wa-Iwo"/>
+                            <constraint firstItem="Tj4-Cw-Uab" firstAttribute="top" secondItem="ypD-qu-XOJ" secondAttribute="bottom" constant="23" id="ybd-3d-1G6"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ERo-GQ-Igy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="926" y="179"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cancelXIcon" width="20" height="20"/>
+    </resources>
+</document>

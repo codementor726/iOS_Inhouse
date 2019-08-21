@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="tf4-5f-2jD">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Colfax-Medium.otf">
+            <string>Colfax-Medium</string>
+        </array>
+        <array key="Colfax-Regular.otf">
+            <string>Colfax-Regular</string>
+        </array>
+        <array key="FreightDispProMedium-Regular.otf">
+            <string>FreightDispProMedium-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Reservation Success Popup View Controller-->
+        <scene sceneID="ltb-Ri-OdD">
+            <objects>
+                <viewController storyboardIdentifier="ReservationSuccessPopupViewControllerIdentifier" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tf4-5f-2jD" customClass="ReservationSuccessPopupViewController" customModule="InHouse" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vMD-so-hHb"/>
+                        <viewControllerLayoutGuide type="bottom" id="6GX-o5-2g3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QV2-Aw-8ai">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nvt-Aq-ed1">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="370"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h81-Ku-1mr">
+                                        <rect key="frame" x="30" y="64" width="315" height="38"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="FreightDispProMedium-Regular" family="FreightDispProMedium-Regular" pointSize="30"/>
+                                        <color key="textColor" red="0.2071802616" green="0.22707915309999999" blue="0.25205698609999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fkx-c1-m2R">
+                                        <rect key="frame" x="323" y="8" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="UA1-rf-qW8"/>
+                                            <constraint firstAttribute="width" constant="44" id="n8w-VY-tzO"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.33150681850000002" green="0.38760548830000002" blue="0.43349790570000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" image="blueCancel"/>
+                                        <connections>
+                                            <action selector="tapCancel:" destination="tf4-5f-2jD" eventType="touchUpInside" id="AYe-DO-aEl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="04D-Le-ovt">
+                                        <rect key="frame" x="26" y="292" width="323" height="48"/>
+                                        <color key="backgroundColor" red="0.26459759473800659" green="0.32450801134109497" blue="0.38695868849754333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="yUq-ZQ-6fz"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Colfax-Medium" family="Colfax" pointSize="16"/>
+                                        <state key="normal" title="OK">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tapActionButton:" destination="tf4-5f-2jD" eventType="touchUpInside" id="7Dr-vp-EHM"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thanks for booking..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kf5-Vg-WU6">
+                                        <rect key="frame" x="30" y="118" width="315" height="15"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="Colfax-Regular" family="Colfax" pointSize="15"/>
+                                        <color key="textColor" red="0.26051515339999998" green="0.3244303167" blue="0.38823529410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurant" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mKS-cP-x1P">
+                                        <rect key="frame" x="30" y="141" width="315" height="20"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="Colfax-Medium" family="Colfax" pointSize="20"/>
+                                        <color key="textColor" red="0.26051515339999998" green="0.3244303167" blue="0.38823529410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ewz-xO-Fhk">
+                                        <rect key="frame" x="24" y="169" width="327" height="15"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="Colfax-Regular" family="Colfax" pointSize="15"/>
+                                        <color key="textColor" red="0.26051515339999998" green="0.3244303167" blue="0.38823529410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="UY5-Se-ygQ">
+                                        <rect key="frame" x="24" y="192" width="327" height="15"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="15" id="yaz-hD-quR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Colfax-Regular" family="Colfax" pointSize="14"/>
+                                        <color key="textColor" red="0.26051515339999998" green="0.3244303167" blue="0.38823529410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="mKS-cP-x1P" firstAttribute="top" secondItem="kf5-Vg-WU6" secondAttribute="bottom" constant="8" id="4Hr-hX-wd4"/>
+                                    <constraint firstItem="UY5-Se-ygQ" firstAttribute="top" secondItem="Ewz-xO-Fhk" secondAttribute="bottom" constant="8" id="6rr-Iq-p9V"/>
+                                    <constraint firstAttribute="trailing" secondItem="h81-Ku-1mr" secondAttribute="trailing" constant="30" id="AcO-SM-ezf"/>
+                                    <constraint firstAttribute="trailing" secondItem="UY5-Se-ygQ" secondAttribute="trailing" constant="24" id="DlN-HT-dyR"/>
+                                    <constraint firstAttribute="trailing" secondItem="fkx-c1-m2R" secondAttribute="trailing" constant="8" id="EDX-nt-Ayd"/>
+                                    <constraint firstItem="04D-Le-ovt" firstAttribute="top" relation="greaterThanOrEqual" secondItem="UY5-Se-ygQ" secondAttribute="bottom" constant="8" id="EuN-K5-0ye"/>
+                                    <constraint firstItem="fkx-c1-m2R" firstAttribute="top" secondItem="nvt-Aq-ed1" secondAttribute="top" constant="8" id="FUE-cb-etg"/>
+                                    <constraint firstItem="h81-Ku-1mr" firstAttribute="top" secondItem="nvt-Aq-ed1" secondAttribute="top" constant="64" id="FrK-iE-9ni"/>
+                                    <constraint firstAttribute="trailing" secondItem="mKS-cP-x1P" secondAttribute="trailing" constant="30" id="GRM-zg-JtI"/>
+                                    <constraint firstItem="mKS-cP-x1P" firstAttribute="centerX" secondItem="nvt-Aq-ed1" secondAttribute="centerX" id="MRQ-lh-mRh"/>
+                                    <constraint firstItem="kf5-Vg-WU6" firstAttribute="leading" secondItem="nvt-Aq-ed1" secondAttribute="leading" constant="30" id="Mzs-SP-FYv"/>
+                                    <constraint firstItem="h81-Ku-1mr" firstAttribute="leading" secondItem="nvt-Aq-ed1" secondAttribute="leading" constant="30" id="OuE-0t-CJG"/>
+                                    <constraint firstItem="04D-Le-ovt" firstAttribute="leading" secondItem="nvt-Aq-ed1" secondAttribute="leading" constant="26" id="PdS-aL-h15"/>
+                                    <constraint firstAttribute="height" constant="370" id="RGq-VL-Z6z"/>
+                                    <constraint firstItem="kf5-Vg-WU6" firstAttribute="centerX" secondItem="nvt-Aq-ed1" secondAttribute="centerX" id="U0F-fj-nyD"/>
+                                    <constraint firstItem="Ewz-xO-Fhk" firstAttribute="top" secondItem="mKS-cP-x1P" secondAttribute="bottom" constant="8" id="XEw-VC-eWm"/>
+                                    <constraint firstItem="UY5-Se-ygQ" firstAttribute="leading" secondItem="nvt-Aq-ed1" secondAttribute="leading" constant="24" id="Y3h-El-tfF"/>
+                                    <constraint firstItem="kf5-Vg-WU6" firstAttribute="top" secondItem="h81-Ku-1mr" secondAttribute="bottom" constant="16" id="bSb-bH-Ba7"/>
+                                    <constraint firstItem="Ewz-xO-Fhk" firstAttribute="leading" secondItem="nvt-Aq-ed1" secondAttribute="leading" constant="24" id="gHO-DK-66T"/>
+                                    <constraint firstItem="mKS-cP-x1P" firstAttribute="leading" secondItem="nvt-Aq-ed1" secondAttribute="leading" constant="30" id="gVl-2e-Qbh"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ewz-xO-Fhk" secondAttribute="trailing" constant="24" id="lCt-4w-bUM"/>
+                                    <constraint firstAttribute="trailing" secondItem="kf5-Vg-WU6" secondAttribute="trailing" constant="30" id="li4-uf-m2z"/>
+                                    <constraint firstAttribute="bottom" secondItem="04D-Le-ovt" secondAttribute="bottom" constant="30" id="nWf-3j-B7B"/>
+                                    <constraint firstItem="h81-Ku-1mr" firstAttribute="centerX" secondItem="nvt-Aq-ed1" secondAttribute="centerX" id="weU-Cx-sHD"/>
+                                    <constraint firstAttribute="trailing" secondItem="04D-Le-ovt" secondAttribute="trailing" constant="26" id="xLs-T3-m5n"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nvt-Aq-ed1" firstAttribute="top" secondItem="QV2-Aw-8ai" secondAttribute="top" id="332-k7-1l9"/>
+                            <constraint firstAttribute="trailing" secondItem="nvt-Aq-ed1" secondAttribute="trailing" id="IiH-0C-5Tp"/>
+                            <constraint firstItem="nvt-Aq-ed1" firstAttribute="leading" secondItem="QV2-Aw-8ai" secondAttribute="leading" id="Rk7-4H-Ydb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="actionButton" destination="04D-Le-ovt" id="eSH-V5-LpK"/>
+                        <outlet property="descriptionLabel" destination="Ewz-xO-Fhk" id="VL6-jO-GLE"/>
+                        <outlet property="oooLabel" destination="UY5-Se-ygQ" id="8ct-CL-yFP"/>
+                        <outlet property="restaurantLabel" destination="mKS-cP-x1P" id="m3i-Qb-XsN"/>
+                        <outlet property="subtitleLabel" destination="kf5-Vg-WU6" id="ApX-i6-I6l"/>
+                        <outlet property="titleLabel" destination="h81-Ku-1mr" id="ICx-Mi-4F9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UfY-AU-NTJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-199.19999999999999" y="204.64767616191907"/>
+        </scene>
+        <!--Reservation Error Popup View Controller-->
+        <scene sceneID="5hA-Fg-2Iq">
+            <objects>
+                <viewController storyboardIdentifier="ReservationErrorPopupViewControllerIdentifier" useStoryboardIdentifierAsRestorationIdentifier="YES" id="axR-qf-BtM" customClass="ReservationErrorPopupViewController" customModule="InHouse" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PaM-mX-gv6"/>
+                        <viewControllerLayoutGuide type="bottom" id="e1F-h1-adM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wkf-qc-RmZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LEw-Oi-fw6">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="370"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sorry!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j5w-2h-nak">
+                                        <rect key="frame" x="30" y="64" width="315" height="38"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="FreightDispProMedium-Regular" family="FreightDispProMedium-Regular" pointSize="30"/>
+                                        <color key="textColor" red="0.2071802616" green="0.22707915309999999" blue="0.25205698609999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rw2-q8-F0P">
+                                        <rect key="frame" x="323" y="8" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="KlW-31-VpR"/>
+                                            <constraint firstAttribute="width" constant="44" id="S4b-fc-VBC"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.26051515339999998" green="0.3244303167" blue="0.38823529410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" image="blueCancel"/>
+                                        <connections>
+                                            <action selector="tapCancel:" destination="axR-qf-BtM" eventType="touchUpInside" id="zQu-hb-Iky"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZ5-Ir-GeF">
+                                        <rect key="frame" x="26" y="298" width="323" height="48"/>
+                                        <color key="backgroundColor" red="0.26459759469999999" green="0.32450801130000001" blue="0.38695868849999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="6YJ-v3-dru"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Colfax-Medium" family="Colfax" pointSize="16"/>
+                                        <state key="normal" title="Try Again">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tapTryAgain:" destination="axR-qf-BtM" eventType="touchUpInside" id="8dW-mQ-FfE"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Something went wrong while trying to book" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X6y-YI-GvO">
+                                        <rect key="frame" x="30" y="118" width="315" height="15"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="Colfax-Regular" family="Colfax" pointSize="15"/>
+                                        <color key="textColor" red="0.26051515339999998" green="0.3244303167" blue="0.38823529410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurant" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E6c-6E-4iY">
+                                        <rect key="frame" x="30" y="152" width="315" height="20"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="Colfax-Medium" family="Colfax" pointSize="20"/>
+                                        <color key="textColor" red="0.26051515339999998" green="0.3244303167" blue="0.38823529410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Party of 2 on Friday, June 9th at 10pm" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="Ok1-ba-wVS">
+                                        <rect key="frame" x="30" y="180" width="315" height="15"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="Colfax-Regular" family="Colfax" pointSize="15"/>
+                                        <color key="textColor" red="0.26051515339999998" green="0.3244303167" blue="0.38823529410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="370" id="62o-vz-fus"/>
+                                    <constraint firstAttribute="trailing" secondItem="X6y-YI-GvO" secondAttribute="trailing" constant="30" id="7bK-3a-dpS"/>
+                                    <constraint firstItem="Ok1-ba-wVS" firstAttribute="leading" secondItem="X6y-YI-GvO" secondAttribute="leading" id="8cJ-NL-Qqc"/>
+                                    <constraint firstItem="X6y-YI-GvO" firstAttribute="top" secondItem="j5w-2h-nak" secondAttribute="bottom" constant="16" id="B95-LL-Yb3"/>
+                                    <constraint firstAttribute="trailing" secondItem="rw2-q8-F0P" secondAttribute="trailing" constant="8" id="Bbv-ag-lHr"/>
+                                    <constraint firstItem="E6c-6E-4iY" firstAttribute="trailing" secondItem="X6y-YI-GvO" secondAttribute="trailing" id="EG2-xz-9Rs"/>
+                                    <constraint firstItem="JZ5-Ir-GeF" firstAttribute="leading" secondItem="LEw-Oi-fw6" secondAttribute="leading" constant="26" id="ENX-HJ-qZM"/>
+                                    <constraint firstAttribute="trailing" secondItem="JZ5-Ir-GeF" secondAttribute="trailing" constant="26" id="EfJ-tC-KtY"/>
+                                    <constraint firstItem="E6c-6E-4iY" firstAttribute="centerX" secondItem="LEw-Oi-fw6" secondAttribute="centerX" id="GjD-w8-j0i"/>
+                                    <constraint firstAttribute="bottom" secondItem="JZ5-Ir-GeF" secondAttribute="bottom" constant="24" id="HZQ-7N-bAi"/>
+                                    <constraint firstItem="X6y-YI-GvO" firstAttribute="leading" secondItem="LEw-Oi-fw6" secondAttribute="leading" constant="30" id="O6f-qM-bNC"/>
+                                    <constraint firstItem="j5w-2h-nak" firstAttribute="centerX" secondItem="LEw-Oi-fw6" secondAttribute="centerX" id="OFg-t6-hUr"/>
+                                    <constraint firstItem="rw2-q8-F0P" firstAttribute="top" secondItem="LEw-Oi-fw6" secondAttribute="top" constant="8" id="WmN-Ai-agm"/>
+                                    <constraint firstItem="Ok1-ba-wVS" firstAttribute="trailing" secondItem="X6y-YI-GvO" secondAttribute="trailing" id="XXO-oT-VR1"/>
+                                    <constraint firstItem="E6c-6E-4iY" firstAttribute="leading" secondItem="X6y-YI-GvO" secondAttribute="leading" id="b4a-nh-dAZ"/>
+                                    <constraint firstItem="JZ5-Ir-GeF" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Ok1-ba-wVS" secondAttribute="bottom" constant="8" id="g2O-7i-xF9"/>
+                                    <constraint firstItem="Ok1-ba-wVS" firstAttribute="top" secondItem="E6c-6E-4iY" secondAttribute="bottom" constant="8" id="jL5-3l-Csr"/>
+                                    <constraint firstItem="X6y-YI-GvO" firstAttribute="centerX" secondItem="LEw-Oi-fw6" secondAttribute="centerX" id="lIz-J0-zUb"/>
+                                    <constraint firstItem="j5w-2h-nak" firstAttribute="leading" secondItem="LEw-Oi-fw6" secondAttribute="leading" constant="30" id="lkg-bG-ZlV"/>
+                                    <constraint firstItem="j5w-2h-nak" firstAttribute="top" secondItem="LEw-Oi-fw6" secondAttribute="top" constant="64" id="osE-RO-QMT"/>
+                                    <constraint firstAttribute="trailing" secondItem="j5w-2h-nak" secondAttribute="trailing" constant="30" id="qya-ys-an8"/>
+                                    <constraint firstItem="E6c-6E-4iY" firstAttribute="top" secondItem="X6y-YI-GvO" secondAttribute="bottom" constant="19" id="yYy-xP-2em"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LEw-Oi-fw6" firstAttribute="leading" secondItem="wkf-qc-RmZ" secondAttribute="leading" id="Qel-G4-FRt"/>
+                            <constraint firstItem="LEw-Oi-fw6" firstAttribute="top" secondItem="wkf-qc-RmZ" secondAttribute="top" id="nDs-kx-XfT"/>
+                            <constraint firstAttribute="trailing" secondItem="LEw-Oi-fw6" secondAttribute="trailing" id="zQE-aS-Hcb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="Ok1-ba-wVS" id="RO3-f8-89f"/>
+                        <outlet property="errorDetailsLabel" destination="X6y-YI-GvO" id="2LB-2L-VSA"/>
+                        <outlet property="restaurantLabel" destination="E6c-6E-4iY" id="6F3-LY-LJX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Keu-zb-5gT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="728.79999999999995" y="204.64767616191907"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="blueCancel" width="20" height="20"/>
+    </resources>
+</document>

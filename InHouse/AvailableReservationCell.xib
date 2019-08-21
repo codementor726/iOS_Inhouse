@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Colfax-Medium.otf">
+            <string>Colfax-Medium</string>
+        </array>
+        <array key="Colfax-Regular.otf">
+            <string>Colfax-Regular</string>
+        </array>
+        <array key="Colfax-RegularItalic.otf">
+            <string>Colfax-RegularItalic</string>
+        </array>
+        <array key="FreightDispProMedium-Regular.otf">
+            <string>FreightDispProMedium-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AvailableReservationCellIdentifier" id="1uO-dm-MjD" customClass="AvailableReservationCell" customModule="InHouse" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="319" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="319" height="120"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurant" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8El-Dv-BuD">
+                        <rect key="frame" x="16" y="16" width="128.5" height="38"/>
+                        <color key="backgroundColor" red="0.9959705472" green="0.99614065890000003" blue="0.99595981840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" name="FreightDispProMedium-Regular" family="FreightDispProMedium-Regular" pointSize="30"/>
+                        <color key="textColor" red="0.26459759469999999" green="0.32450801130000001" blue="0.38695868849999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Neighborhood" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d1A-RB-40q">
+                        <rect key="frame" x="16" y="58" width="204" height="14"/>
+                        <color key="backgroundColor" red="0.99597054719924927" green="0.99614065885543823" blue="0.9959598183631897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" name="Colfax-RegularItalic" family="Colfax" pointSize="14"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xVu-CD-OO9">
+                        <rect key="frame" x="16" y="78" width="204" height="14"/>
+                        <color key="backgroundColor" red="0.99597054719924927" green="0.99614065885543823" blue="0.9959598183631897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" name="Colfax-Regular" family="Colfax" pointSize="14"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rIf-79-ciF" userLabel="Bottom Spacer">
+                        <rect key="frame" x="0.0" y="117" width="319" height="3"/>
+                        <color key="backgroundColor" red="0.26274509800000001" green="0.32549019610000002" blue="0.38823529410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="3" id="iiG-NS-ELq"/>
+                        </constraints>
+                    </view>
+                    <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FYq-6R-ma3">
+                        <rect key="frame" x="236" y="58" width="73" height="35"/>
+                        <color key="backgroundColor" red="0.26274509800000001" green="0.32549019610000002" blue="0.38823529410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="73" id="6Af-4d-MKY"/>
+                            <constraint firstAttribute="height" constant="35" id="OMc-mC-GUj"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Colfax-Medium" family="Colfax" pointSize="12"/>
+                        <state key="normal" title="Request">
+                            <color key="titleColor" red="0.96862745100000003" green="0.97647058819999999" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="tapFirstTimeslot:" destination="1uO-dm-MjD" eventType="touchUpInside" id="3fI-Us-qaK"/>
+                        </connections>
+                    </button>
+                    <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V3X-wu-ZXv">
+                        <rect key="frame" x="228" y="58" width="0.0" height="35"/>
+                        <color key="backgroundColor" red="0.26274509800000001" green="0.32549019610000002" blue="0.38823529410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" id="RIb-UT-Uta"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Colfax-Medium" family="Colfax" pointSize="12"/>
+                        <state key="normal" title="Request">
+                            <color key="titleColor" red="0.96862745100000003" green="0.97647058819999999" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="tapSecondTimeslot:" destination="1uO-dm-MjD" eventType="touchUpInside" id="H6X-fM-pKa"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.9959705472" green="0.99614065890000003" blue="0.99595981840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="8El-Dv-BuD" firstAttribute="leading" secondItem="1uO-dm-MjD" secondAttribute="leading" constant="16" id="6oq-ol-9ow"/>
+                <constraint firstAttribute="bottom" secondItem="rIf-79-ciF" secondAttribute="bottom" id="9At-0q-MBH"/>
+                <constraint firstItem="rIf-79-ciF" firstAttribute="leading" secondItem="1uO-dm-MjD" secondAttribute="leading" id="9zq-Og-gFw"/>
+                <constraint firstItem="V3X-wu-ZXv" firstAttribute="height" secondItem="FYq-6R-ma3" secondAttribute="height" id="Dre-0u-OnW"/>
+                <constraint firstItem="FYq-6R-ma3" firstAttribute="top" secondItem="d1A-RB-40q" secondAttribute="top" id="EMG-qk-gpT"/>
+                <constraint firstItem="V3X-wu-ZXv" firstAttribute="leading" secondItem="xVu-CD-OO9" secondAttribute="trailing" constant="8" id="H4d-RE-0sf"/>
+                <constraint firstItem="FYq-6R-ma3" firstAttribute="leading" secondItem="V3X-wu-ZXv" secondAttribute="trailing" constant="8" id="IuS-nz-U7j"/>
+                <constraint firstItem="d1A-RB-40q" firstAttribute="leading" secondItem="8El-Dv-BuD" secondAttribute="leading" id="JjG-pv-sKK"/>
+                <constraint firstItem="V3X-wu-ZXv" firstAttribute="leading" secondItem="d1A-RB-40q" secondAttribute="trailing" constant="8" id="QgV-vq-zig"/>
+                <constraint firstItem="V3X-wu-ZXv" firstAttribute="centerY" secondItem="FYq-6R-ma3" secondAttribute="centerY" id="REJ-y5-TM9"/>
+                <constraint firstAttribute="trailing" secondItem="rIf-79-ciF" secondAttribute="trailing" id="WDg-x6-gOP"/>
+                <constraint firstItem="rIf-79-ciF" firstAttribute="top" secondItem="FYq-6R-ma3" secondAttribute="bottom" constant="24" id="Z27-X6-iiW"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="8El-Dv-BuD" secondAttribute="trailing" constant="8" id="aGb-Fq-YNv"/>
+                <constraint firstItem="xVu-CD-OO9" firstAttribute="top" secondItem="d1A-RB-40q" secondAttribute="bottom" constant="6" id="lrJ-e0-jVA"/>
+                <constraint firstItem="8El-Dv-BuD" firstAttribute="top" secondItem="1uO-dm-MjD" secondAttribute="top" constant="16" id="nyQ-YF-fX2"/>
+                <constraint firstAttribute="trailing" secondItem="FYq-6R-ma3" secondAttribute="trailing" constant="10" id="vXX-VD-d9r"/>
+                <constraint firstItem="xVu-CD-OO9" firstAttribute="leading" secondItem="d1A-RB-40q" secondAttribute="leading" id="wbu-IJ-Yqg"/>
+            </constraints>
+            <connections>
+                <outlet property="addressLabel" destination="xVu-CD-OO9" id="5Wg-LX-DSL"/>
+                <outlet property="firstTimeslotButton" destination="FYq-6R-ma3" id="b7R-qs-uKU"/>
+                <outlet property="neighborhoodLabel" destination="d1A-RB-40q" id="zxv-ga-6BZ"/>
+                <outlet property="restaurantNameLabel" destination="8El-Dv-BuD" id="5QM-X2-Zcc"/>
+                <outlet property="secondTimeslotButton" destination="V3X-wu-ZXv" id="GqT-DN-BCE"/>
+                <outlet property="secondTimeslotWidth" destination="RIb-UT-Uta" id="VHb-gO-8DT"/>
+            </connections>
+            <point key="canvasLocation" x="74.5" y="59"/>
+        </collectionViewCell>
+    </objects>
+</document>
